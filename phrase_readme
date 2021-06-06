@@ -1,0 +1,53 @@
+# phrase-finder
+a webtool that finds easy phrases based on your target word
+
+# Easy Phrases - NOW!
+EP-NOW! finds easy to understand English phrases.  The user inputs a word (a target) and EP-NOW! will search a large sampling of educational reading maetrials for phrases that uses the target word, but as the most difficult within.  Although any search engine can find texts using keywords or keyphrases, what makes EP-NOW! unique is its screening of vocabulary difficulty levels.   This potentially has uses such as below:
+- A learner of English as Second Language or Foreign Language can use the output to understand the use of the target word
+- An educator of English as Second Language or Foreign Language can find example sentences to be used in their teaching sessions
+- A test developer can find suitable phrases to be included in English examinations
+
+# Using EP-NOW!
+EP-NOW! requires registration before a user can access the data.  In the process it collects user data including language profiles, educational background, and it quizzes the user to limit use of bots.  The obtained data will be used in statistical purposes as a part of the Applied Linguistics study by the administrator of the website.
+A user will set up their profile with a username, a password and an email address.  The password is stored in a table as a hash-key.  
+Upon log-in, the user is able to input a target word to submit.  A search results page displays a handful of sample phrases including the target word.  
+Details of the source of the text is available with a click of a drop-down.  This includes the grade-level based on USA 1-13 school system and its reading publications and other readers targeting ESL/EFL learners.
+
+# Components of EP-NOW!
+This tool is operated using the following:
+ - python for the main application that does the work under the hood
+ - SQLite3 for managing database in several tables
+ - html for handling GUI 
+ - css for making things look nice
+ - JavaScript for being responsive
+
+# How EP-NOW! was put together
+The project required massive data from Dr. Pinchbeck of Carleton University to make this project possible.  Dr. Pinchbeck is an Assistant Professor of Applied Linguistics and Discourse Studies in the School of Linguistics and Language Studies.  His focus mainly concerns vocabulary profiling and corpus linguistics.  
+Data in EP-NOW!
+ - Wordlist: a large collection of words with associated difficulty levels according to the scales based on Dr. Pinchbeck's analysis
+ - Corpus: a collection of phrases from educational reading materials
+These are itemized, linked and stored in a series of database tables which ultimately enables a quick search and display of sample phrases. 
+Search Logic  
+ - A target word input is searched in a wordlist to determine the difficulty level
+ - The same word is searched in a table of phrases indicating that target word as the most difficult
+To enable this search, a table of every element in each sentence, itemized with its difficulty level was created. This table enables relatively fast queries.
+GUI
+In order to improve user experience, the tool simply prompts an input of a word, resulting in an output of a few sample phrases.  A text field and a submit button are the only mechanical elements of the generate.html page.  The display.html page offers optional display of the entire text including the phrases containing the target.  This also includes some information on the target grade level of the text.
+
+# Future plans of improvements
+As this project will likely continue in a larger scale for the purposes of data collection for research by the administrators, and for the better useabilities by the users, the following would likely to be included in the subsequent versions of the tool:
+ - part-of-speech information to differentiate uses
+ - colour coding inside context display to enhance visual appearance and to highlight the target word
+ - upload capability to enable reverse-search of difficulty levels analysis from user-provided text
+ - exporting the rest of the corpus into the database which is in several hundred million words to make the data pool more diverse
+ - reset password functions for the users 
+ - researcher/user collaboration by including more vocabulary profiling quizzes
+ - search instead of the text, but video contents using the target word 
+ 
+# Acknowledgements
+I would like to thank all those on Discord/CS50 who enlightened, encouraged, and assisted me in times of despair and disappointments.  Especially @curiouskiwi, @Blauelf and @polarburr who may or may not work for CS50, but very generously offered their expertise to lift me up from various ditches that I found myself in.
+I also would like to thank Dr. G. Pinchbeck for providing me the massive data and occasionally being my rubber duckie.
+The biggest thanks to Dr. Malan of Harvard University, Brian Yu and Doug Lloyd for letting me repeat their lecture over and over until I started to vaguely see the beauty in the art of programming.  
+
+# Copyrights and Licenses
+All rights reserved. Using this webtool in any form requires prior written permission by the administrator.  
