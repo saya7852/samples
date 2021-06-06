@@ -1,0 +1,62 @@
+<!-- This is CS50 Pset 8 Submission by Masayo Williams (a.k.a. Saya7852) -->
+<!-- It's a Community Website with view-only contents and some external links -->
+<!-- The site will be "eventually" used as a real community site!  Stay tuned. -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Pentry: Main</title>
+        <script>
+        {
+            alert('Reminder: Levy poll is open until November 30th!');
+        }
+
+        </script>
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div class="bg_image"> <!-- background image -->
+            <div class="container">
+                <div class="navbar">
+                    <a href="index.html"> main </a><a href="current.html"> current </a><a href="gallery.html"> gallery </a>
+                    <a href="contact.html"> contact </a>
+                </div>
+            </div>
+            <div class="content"><h1>Welcome to Pentry Lane</h1>
+                <p>Hi! &ensp;  So glad you found us here.<br>
+                This is a page where all Pentry Lane residents and owners can communicate among others.
+                We use this page to maintain open communication with everyone on the lane.<br></p>
+            </div>
+        </div>
+        <div class="banner"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Have you voted already? &ensp;<a href="https://forms.gle/a4JDkXrb5G48c2sA6"> Vote Now</a>
+        </div>
+        <div class="textbox">
+            <h2><a href="current.html">What's Happening Now</a></h2><br>
+            <h4><a href="current.html">Smooth Flowing:</a></h4><p>Our massive sewer repair project is nearly completed, and the major damage done
+            to the interior of some homes are being fixed.  We have some photos of the process
+            in our <a href="gallery.html">Gallery.</a>&ensp; <a href="current.html">Read more...</a></p>
+            <br>
+            <h4><a href="current.html">Next Up:</a></h4><p>Those nasty potholes have been patched up for the time being.
+            What's coming next as our BIG project is the paving of the lane, and this is an opportunity to reinstall
+            the lighting to maintain safety on the lane.&ensp; <a href="current.html">Read more...</a></p>
+            <mark>Would you like to join <b>the Lighting Commitee</b> to help design the lighting on the lane? &ensp;
+            Please <a href="mailto:pentrysecretary@gmail.com">drop us a line</a> to inquire!</mark><br>
+            <br><br>
+            <h4><a href="current.html">Your Canoes by The River:</a><p></h4><p>There has been a few reports of canoe theft.
+            If you have yours by the river please consider locking them.</p>
+            <br><br>
+            <h2><a href="mailto:pentrysecretary@gmail.com">Your Feedback Please!</a></h2><p>Having this website is an experiment
+            (for the time being) and our plan is to make it grow with everyone's feedback.
+            Please send us your ideas for new contents via <a href="mailto:pentrysecretary@gmail.com">email.
+            &ensp; </a><br><br>
+            <a href="mailto:pentrysecretary@gmail.com"><button type="button" class="btn btn-outline-secondary">Email Admin</button>
+            <br><br>
+            <a href="main.html"><button type="button" class="btn btn-outline-secondary">Main Page</button></a></p>
+            </div>
+        </div>
+    </body>
+</html>
