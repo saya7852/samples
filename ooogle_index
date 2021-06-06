@@ -1,0 +1,46 @@
+<!-- CS50w Project 0 submission by Masayo Williams (a.k.a. Saya7852 -->
+<!-- This is a website that patches data into Google to output Google Search results -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ooogle</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="menu-left">
+                <a id="link" href="about.html">About</a>
+                <a id="link" href="https://store.google.com">Store</a>
+            </div>          
+            <div><a id="link" href="image.html">Image</a>
+            </div>
+            <div><a id="link" href="advanced.html">Advanced</a>
+            </div>
+            
+
+        </div>
+        
+        <form action="https://google.com/search">
+            <div class="areaA">
+                <div class="logo-holder"><img id="logo" src="pale-logo1.png" alt="ooogle logo"></div>
+                <div class="textbox">
+                    <img src="magnifying-glass.png" style="height:15px; position:middle; padding:2px;">
+                    <input id="input-area" type="search" name="q" autofocus="autofocus" autocomplete="off">                
+                </div>
+                <br>
+                <div class="button-holder">
+                    <div class="areaB">
+                        <input id="button" name="btnK" type="submit" value="Google Search">
+                    </div>
+                    <div class="areaB">
+                        <input id="button" name="btnI" type="submit" value="I'm Feeling Lucky">
+                     </div>
+                </div> 
+            </div>
+        </form>
+        <br>
+        <div class="footnote" style="color: darkgray; text-align:center;">CS50web Project 0 Submission by <a href="about.html">Yours Truly</a></div>
+    </body>
+</html>
