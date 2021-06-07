@@ -1,3 +1,6 @@
+# this is a submission of CS50 Pset8 Finance by Masayo Williams (a.k.a. Saya7852)
+# this application is a main program that runs a stock trading website
+
 import os
 import datetime
 
