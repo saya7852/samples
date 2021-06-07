@@ -1,3 +1,7 @@
+# this is a submission for CS50 Final Project by Masayo Williams (a.k.a. Saya7852)
+# this program runs a webtool that searches for phrases that include a user-provided
+# search keyword(s)
+
 import os
 import re
 import datetime
