@@ -1,3 +1,8 @@
+# CS50 Final Project - submitted by Masayo Williams (a.k.a. Saya7852)
+# this is a part of a program that runs the Phrase Finder website by processing data
+# from a raw state of .csv and converts into SQL data by filtering into datatable
+# it clearns out and standardize characters for effective queries
+
 from cs50 import SQL
 
 # this program updates 'corpus' table after .csv data is imported via temp. table
