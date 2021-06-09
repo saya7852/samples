@@ -1,3 +1,6 @@
+# this is a part of a submission for CS50 Final Project by Masayo Williams (a.k.a. Saya7852)
+# it takes a set of data and cleans things up for consistent query results
+
 from cs50 import SQL
 
 # this program updates 'corpus' table after .csv data is imported via temp. table
